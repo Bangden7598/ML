@@ -1,1 +1,12 @@
-gg.alert("Berhasil")
+gg.clearResults()
+gg.setVisible(false)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("7238763904982017396;8018218685027402091;8386104319401160553:9", 32)
+gg.refineNumber("7238763904982017396") 
+if gg.getResultsCount()== 1 then
+gg.getResults(1)
+gg.editAll("0", 32) 
+gg.alert ("---------------------------------------------\n   𝘽𝙮𝙥𝙖𝙨𝙨 𝘾𝙝𝙚𝙖𝙩 𝙍𝙪𝙣𝙣𝙞𝙣𝙜\n             𝙋𝙡𝙖𝙮 𝙎𝙖𝙛𝙚 !\n---------------------------------------------") 
+else
+gg.alert('Please Update Bypass') 
+os.exit() 
